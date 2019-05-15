@@ -4,47 +4,102 @@
 
   <head>
     <title>Portfolio | Chieri Wada</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Material Design Lite-->
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_orange.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <!--Custom Style-->
+    <link rel="stylesheet" href="styles/main.css">
   </head>
 
   <body>
 
-    <header>
+    <header class="mdl-layout__header mdl-layout__header--transparent">
       <h1>Chieri Wada</h1>
       <p class="slogan">Product designer from SF Bay Area</p>
     </header>
 
-    <main>
-      <div class="project featured-project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="Project screenshot">
-        <h2>Featured Project Name</h2>
-        <p>Project description text</p>
+    <main class="mdl-layout__content mdl-grid">
+
+      <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
+          <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
+            <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="Project screenshot"/>
+          </div>
+          <div class="mdl-cell mdl-cell--7-col">
+            <h2 class="mdl-card__title-text">Featured Project Name</h2>
+            <p class="project-description mdl-card__supporting-text">Project description text</p>
+          </div>
       </div>
 
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="Project screenshot">
-        <h2>Project Name</h2>
-        <p>Project description text</p>
+      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
+        <div>
+          <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="Project screenshot"/>
+        </div>
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Project Name</h2>
+        </div>
+        <div>
+          <p class="mdl-card__supporting-text">Project description text</p>
+        </div>
       </div>
 
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="Project screenshot">
-        <h2>Project Name</h2>
-        <p>Project description text</p>
+      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
+        <div>
+          <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="Project screenshot"/>
+        </div>
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Project Name</h2>
+        </div>
+        <div>
+          <p class="mdl-card__supporting-text">Project description text</p>
+        </div>
       </div>
 
-      <div class="project">
-        <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="Project screenshot">
-        <h2>Project Name</h2>
-        <p>Project description text</p>
+      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
+        <div>
+          <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="Project screenshot"/>
+        </div>
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Project Name</h2>
+        </div>
+        <div>
+          <p class="mdl-card__supporting-text">Project description text</p>
+        </div>
       </div>
     </main>
 
-    <footer>
-      <ul>
-        <li> <a href="https://www.linkedin.com/in/chieriwada/">LinkedIn</a> </li>
-        <li> <a href="https://github.com/chieriwada">GitHub</a> </li>
-        <li> <a href="https://twitter.com/holachieri">Twitter</a> </li>
-        <li> <a href="mailto:wada.chieri@gmail.com">Email</a> </li>
+    <footer class="mdl-mini-footer">
+      <ul class="mdl-mini-footer__link-list">
+
+        <li>
+          <a href="https://www.linkedin.com/in/chieriwada/">
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/chieriwada">
+            <i class="fab fa-github-square" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/holachieri">
+            <i class="fab fa-twitter-square" aria-hidden="true"></i>
+          </a>
+        </li>
+
+        <li>
+          <a href="mailto:wada.chieri@gmail.com">
+            <i class="fas fa-envelope-square" aria-hidden="true"></i>
+          </a>
+        </li>
+
       </ul>
     </footer>
 
