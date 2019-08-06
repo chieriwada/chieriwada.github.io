@@ -3,105 +3,135 @@
 <html>
 
   <head>
-    <title>Portfolio | Chieri Wada</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!--Material Design Lite-->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-deep_orange.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-
-    <!--Font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>Chieri Wada | Product Designer</title>
 
     <!--Custom Style-->
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
   </head>
 
   <body>
 
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1>Chieri Wada</h1>
-      <p class="slogan">Product designer from SF Bay Area</p>
-    </header>
-
-    <main class="mdl-layout__content mdl-grid">
-
-      <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-          <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-            <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="Project screenshot"/>
-          </div>
-          <div class="mdl-cell mdl-cell--7-col">
-            <h2 class="mdl-card__title-text">Featured Project Name</h2>
-            <p class="project-description mdl-card__supporting-text">Project description text</p>
-          </div>
+    <!-- Top nav -->
+    <div class="topnav">
+      <div class="topnav__logo">
+        <a class="topnav__logo" href="index.html"><img src="images/logo_icon.png" alt="Chieri Wada's personal logo"></a>
       </div>
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="Project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
+      <div class="topnav__menu">
+        <a class="topnav__menu" href="">WORK</a>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <!-- Hero -->
+        <section class="content hero__image">
+            <img src="images/tokyo.jpg" alt="Hero image of Chieri Wada">
+            <p><h1 class="hero__text">Hey! I'm Chieri Wada.</h1></p>
+            <p><h2 class="hero__text">Product designer.<br> Born in Japan, raised in the Bay.</h2></p>
+        </section>
+
+      <!-- Who I am -->
+        <section class="content">
+          <p><h1>Who I am</h1></p>
+          <p><h2>If I could describe myself in<br><span id="whoiam__threewords">three words,</span> they would be...</h2></p>
+
+          <article class="whoiam">
+            <div class="whoiam__card" id="card__inquisitive">
+              <p><h2>INQUISITIVE</h2></p>
+              <p class="card">Studying anthropology made me an observer, naturally curious about reasons behind people’s behaviors. I’m not afraid to ask questions!</p>
+            </div>
+
+            <div class="whoiam__card" id="card__empathetic">
+              <p><h2>EMPATHETIC</h2></p>
+              <p class="card">Before I even knew about UX design, my mantra was: Be empathetic. Empathy allows me to see more of the world than I ever could alone.</p>
+            </div>
+
+            <div class="whoiam__card" id="card__excited">
+              <p><h2>(HELLA!!) EXCITED</h2></p>
+              <p class="card">Solving problems excites me. It’s a privilege to have the ability to positively impact lives through design. What’s not to be excited about?!</p>
+            </div>
+
+          </article>
+        </section>
+
+        <!-- What I do -->
+        <section class="content">
+          <p><h1>What I do</h1></p>
+          <p><h2>Hover to see deliverables</h2></p>
+
+          <article class="whatido">
+            <div class="whatido__card" id="card__discover">
+              <h2>DISCOVER</h2>
+            </div>
+
+            <div class="whatido__card" id="card__define">
+              <h2>DEFINE</h2>
+            </div>
+
+            <div class="whatido__card" id="card__design">
+              <h2>DESIGN</h2>
+            </div>
+
+            <div class="whatido__card" id="card__develop">
+              <h2>DEVELOP</h2>
+            </div>
+
+            <div class="whatido__card" id="card__deploy">
+              <h2>DEPLOY</h2>
+            </div>
+
+          </article>
+        </section>
+
+        <!-- What I did -->
+        <section class="content">
+          <p><h1>What I did</h1></p>
+
+          <article class="whatidid">
+            <div class="whatidid__card" id="card__kyodo">
+              <p><h5>UX design/UI design/Branding</h5></p>
+              <p><h3>Kyodo</h3></p>
+              <p class="card">Kyodo is a cloud storage program designed to help freelancers work seamelessly with their clients, no matter the distance.</p>
+              <p><a href="kyodo.html">VIEW CASE STUDY</a></p>
+            </div>
+
+            <div class="whatidid__card" id="card__otherwork">
+              <p><h5>Graphic design/Logo/Print</h5></p>
+              <p><h3>Other Work</h3></p>
+              <p class="card">Interested in my past work as a graphic designer? Feel free to check it out! Includes logos, print design, and more.</p>
+              <p><a href="otherwork.html">VIEW DESIGNS</a></p>
+            </div>
+
+          </article>
+        </section>
+
+
+    </div>
+
+
+    <!-- Bottom nav -->
+    <div class="botnav">
+      <div class="botnav__social">
+        <a class="botnav__social" href="mailto:wada.chieri@gmail.com?subject=Hi%20Chieri%20-%20let's%20grab%20coffee" target="_blank"><img src="images/Email.png" alt="Email icon"></a>
+        <a class="botnav__social" href="https://www.linkedin.com/in/chieriwada" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn icon"></a>
+        <a class="botnav__social" href="https://www.twitter.com/holachieri" target="_blank"><img src="images/Twitter.png" alt="Twitter icon"></a>
+        <a class="botnav__social" href="Resume.pdf" target="_blank"><img src="images/Resume.png" alt="PDF icon for resume"></a>
       </div>
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="Project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
+      <div class="botnav__credit">
+        <h6>Designed & coded with <a class="botnav__credit" href="https://www.complex.com/music/2016/06/hyphy-oral-history">HYPHY</a> by Chieri Wada 2019</h6>
       </div>
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="Project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
+      <div class="botnav__menu">
+        <a class="link__menu botnav__menu" href="">ABOUT ME</a>
       </div>
-    </main>
 
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-
-        <li>
-          <a href="https://www.linkedin.com/in/chieriwada/">
-            <i class="fab fa-linkedin" aria-hidden="true"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://github.com/chieriwada">
-            <i class="fab fa-github-square" aria-hidden="true"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="https://twitter.com/holachieri">
-            <i class="fab fa-twitter-square" aria-hidden="true"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="mailto:wada.chieri@gmail.com">
-            <i class="fas fa-envelope-square" aria-hidden="true"></i>
-          </a>
-        </li>
-
-      </ul>
-    </footer>
+    </div>
 
   </body>
 

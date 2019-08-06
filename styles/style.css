@@ -1,0 +1,294 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: inline-grid;
+  font-size: 8px;
+}
+
+body {
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  scroll-behavior: smooth;
+}
+
+p {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  line-height: 1.6em;
+}
+
+p.card {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;  
+}
+
+h1 {
+  font-size: 7rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  line-height: 1.1em;
+}
+
+h2 {
+  font-size: 5rem;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.1em;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.1em;
+}
+
+h4 {
+  font-size: 3rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
+}
+
+h5 {
+  font-size: 2.25rem;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
+}
+
+/** Caption style **/
+h6 {
+  font-size: 1.75rem;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
+}
+
+a {
+  border-bottom: 0.5rem solid #FA9F28;
+  color: #193D58;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.1em;
+  text-decoration: none;
+}
+
+a:hover  {
+  color: #EDC4BB;
+}
+
+/** Top nav bar **/
+
+.topnav {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 12rem;
+  padding: 2rem 4rem 2rem 4rem;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+.topnav__logo {
+  border-bottom: none;
+  grid-column: 1;
+  margin: auto auto auto 0;
+}
+
+.topnav__logo img {
+  height: 8rem;
+}
+
+.topnav__menu {
+  border-bottom: none;
+  grid-column: 2;
+  margin: auto 0 auto auto;
+}
+
+/** Main content **/
+
+.container {
+  background-color: #ffffff;
+  height: 75vh;
+  margin: 0 auto;
+  overflow-y: scroll;
+  position: relative;
+  top: 12rem;
+  width: 70vw;
+}
+
+.hero__image img {
+  width: 100%;
+}
+
+h1.hero__text {
+  color: #193D58;
+  position: absolute;
+  margin: 6rem;
+  top: 0rem;
+}
+
+h2.hero__text {
+  position: absolute;
+  margin: 6rem;
+  top: 10rem;
+}
+
+/** Who I Am section **/
+
+.whoiam {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.whoiam__card {
+  background-color: #F9F4EE;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+#whoiam__threewords {
+  color: #C3391B;
+  font-weight: 900;
+  font-style: italic;
+}
+
+#card__inquisitive {
+  grid-column: 1;
+}
+
+#card__empathetic {
+  grid-column: 2;
+}
+
+#card__excited {
+  grid-column: 3;
+}
+
+/** What I Do section **/
+
+.whatido {
+  display: grid;
+  grid-template: 8rem 8rem 8rem 8rem 8rem/ 1fr 40rem 1fr;
+  grid-row-gap: 2rem;
+}
+
+.whatido__card {
+  align-items: center;
+  background-color: #193D58;
+  border-radius: 2rem;
+  color: #FFFFFF;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: 1rem 0 0 0;
+}
+
+#card__discover {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#card__define {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#card__design {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#card__develop {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#card__deploy {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+/** What I Did section **/
+
+.whatidid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+}
+
+.whatidid__card {
+  background-color: #F9F4EE;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.whatidid__link {
+  justify-content: center;
+}
+
+#card__kyodo {
+  grid-column: 1;
+}
+
+#card__otherwork {
+  grid-column: 2;
+}
+
+/** Bottom nav bar **/
+
+.botnav {
+  background-color: white;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 12rem;
+  padding: 2rem 4rem 2rem 4rem;
+  position: fixed;
+  width: 100vw;
+}
+
+.botnav__social {
+  border-bottom: none;
+  grid-column: 1;
+  margin: auto auto auto 0;
+}
+
+.botnav__social img {
+  margin: 0 1rem 0 1rem;
+  width: 4rem;
+}
+
+.botnav__credit {
+  grid-column: 2;
+  margin: auto;
+}
+
+a.botnav__credit {
+  color: #193D58;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.1em;
+  text-decoration: none;
+}
+
+.botnav__menu {
+  border-bottom: none;
+  grid-column: 3;
+  margin: auto 0 auto auto;
+}
