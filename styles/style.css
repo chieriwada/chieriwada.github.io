@@ -36,8 +36,8 @@
   --font-size-3: 1.125rem;
   --font-size-4: 1.25rem;
   --font-size-5: 1.5rem;
-  --font-size-6: 2.5rem;
-  --font-size-7: 3.5rem;
+  --font-size-6: 2rem;
+  --font-size-7: 3rem;
   --letter-spacing-main: 0.2em;
   --letter-spacing-link: 0.02em;
   --letter-spacing-title: -0.01em;
@@ -66,15 +66,18 @@ html {
   width: 100%;
 }
 
+.space {
+  height: 20vh;
+}
+
 /** Top nav **/
 
 .navbar_top {
   align-items: stretch;
-  background-color: var(--color-gyozabeige-10);
   display: flex;
   height: 10vh;
   justify-content: space-between;
-  padding: var(--spacing-1);
+  padding: var(--spacing-1) var(--spacing-2);
   position: fixed;
   top: 0;
   width: 100vw;
@@ -109,15 +112,17 @@ html {
 .hero {
   background:
     linear-gradient(
-      rgba(237, 196, 187, 0.7),
-      rgba(0, 0, 0, 0)
+      rgba(237, 196, 187, 0.8),
+      rgba(237, 196, 187, 0.75) 45%,
+      transparent 75%
       ),
     url(/images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: fill;
+  background-size: cover;
+  display: block;
   height: 80vh;
-  padding: var(--spacing-3);
+  padding: var(--spacing-2);
   position: relative;
   margin-top: 10vh;
 }
@@ -133,15 +138,17 @@ html {
   font-weight: var(--font-weight-black);
   letter-spacing: var(--letter-spacing-title);
   line-height: var(--lh-body-title);
+  padding-bottom: var(--spacing-1);
 }
 
 .hero__subtext {
   color: var(--color-sumiblack-50);
+  display: block;
   font-family: var(--secondary-font);
   font-size: var(--font-size-6);
-  /* font-weight: var(--font-weight-black); */
   letter-spacing: var(--letter-spacing-title-mono);
   line-height: var(--lh-body-title);
+  padding-bottom: var(--spacing-1);
 }
 
 /** Bottom nav **/
@@ -152,7 +159,7 @@ html {
   display: flex;
   height: 10vh;
   justify-content: space-between;
-  padding: var(--spacing-1);
+  padding: var(--spacing-1) var(--spacing-2);
   position: fixed;
   bottom: 0;
   width: 100%;
